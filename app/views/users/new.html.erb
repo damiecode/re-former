@@ -1,4 +1,4 @@
-<h1>This is a new page</h1>
+<h1>Sign Up</h1>
 
 <%
 =begin%>
@@ -30,13 +30,4 @@
 <% end %>  
 <%
 =end%>
-
-<%= form_for( @user) do |f| %>
-   <%= f.label :username %>
-   <%= f.text_field :username, placeholder: 'Enter username', :value => 'Mike'   %><br>
-   <%= f.label :email %>
-   <%= f.email_field :email, placeholder: 'Enter email',:value => 'mike@example.com'  %><br>
-   <%= f.label :password %>
-   <%= f.password_field :password, placeholder: 'Enter password', :value => '1234'  %><br>
-   <%= f.submit 'Submit' %>
-<% end %>
+<%= render  "form" %>
